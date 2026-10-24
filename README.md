@@ -1,4 +1,4 @@
-{align="center"}
+
 # Amit Yadav's Local AI Agent
 
 ### A local AI assistant built with Python, Ollama, and tool calling
