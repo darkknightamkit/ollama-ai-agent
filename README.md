@@ -6,10 +6,6 @@
 **Private by default · Runs locally · Built to learn how AI agents
 work**
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![Ollama](https://img.shields.io/badge/LLM-Ollama-black)](https://ollama.com/)
-[![Model](https://img.shields.io/badge/Model-Qwen3%3A4B-6C5CE7)](https://ollama.com/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 :::👋 About
 Hi, I'm Amit Yadav, a Computer Science Engineering student at KIIT
 University. I'm learning and building projects in Python, AI/ML,
@@ -81,20 +77,26 @@ BASE_URL=http://127.0.0.1:11434/v1
 API_KEY=ollama
 MODEL=qwen3:4b
 DEBUG=True
+
 These are example values; confirm the variable names and expected
 settings in your code. Never commit real secrets in .env.
-7. Run the project
+8. Run the project
 Use the entry-point filename from your repository. For example:
 python simple_ai_assistant.py
 🔧 Available tools
 Update this table to match the Python functions registered in your
 project.
 
+
   Tool                 Purpose                                   Parameters
   get_current_time   Returns the current local date and time   None
   get_city_weather   Gets a short weather report for a city    city
   get_user_city      Returns a configured or detected city     None
+
+  
 🧠 How tool calling works
+
+
 1. The model receives context: Your messages, system instructions,
    and tool definitions are sent to the model.
 2. The model requests a tool: It returns a tool name and arguments,
@@ -105,26 +107,11 @@ project.
    to the conversation.
 5. The model responds: It may request another tool or produce a
    final answer.
+   
 Important: The model requests tools; your Python program executes
 them.
-📁 Project structure
-Adjust this example to match your actual files.
-your-project/
-├── simple_ai_assistant.py
-├── tools.py
-├── requirements.txt
-├── .env.example
-├── .gitignore
-├── README.md
-└── .venv/                 # local only; do not commit
+            
 
-🗺️ Roadmap
-- [ ] Improve error handling and input validation
-- [ ] Add more useful tools
-- [ ] Improve conversation memory
-- [ ] Add retrieval-augmented generation (RAG)
-- [ ] Add tests and usage examples
-- [ ] Document the architecture with a diagram
 Edit the checklist as you complete features.
 📚 Learning resources
 - Ollama documentation
